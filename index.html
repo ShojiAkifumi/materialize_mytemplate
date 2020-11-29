@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マテリアライズサイト</title>
+</head>
+
+<body>
+    <header>
+        <nav class="indigo darken-3">
+            <ul id="slide-out" class="sidenav">
+                <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
+                <li><a href="#!">First Sidebar Link</a></li>
+                <li><a href="#!">Second Sidebar Link</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">First</a></li>
+                                    <li><a href="#!">Second</a></li>
+                                    <li><a href="#!">Third</a></li>
+                                    <li><a href="#!">Fourth</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#!">end Sidebar Link</a></li>
+            </ul>
+            <div class="container">
+                <a href="#!" class="brand-logo">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!">First Sidebar Link</a></li>
+                    <li><a href="#!">Second Sidebar Link</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">First</a></li>
+                        <li><a href="#!">Second</a></li>
+                        <li><a href="#!">Third</a></li>
+                        <li><a href="#!">Fourth</a></li>
+                    </ul>
+                    <li><a href="#!">end Sidebar Link</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <section class="section" id="about">
+                <h2>マテリアライズしてみませんか？</h2>
+                <div class="row">
+                    <div class="col m6">
+                        <a class="waves-effect waves-light" onclick="toasts()"><img class="z-depth-2"
+                                src="https://lorempixel.com/600/400/nature/4"></a>
+                    </div>
+                    <div class="col m6">
+                        <p class="center-align">
+                            現在、最も優れているデザインシステムは「マテリアルデザイン」でしょう。これはGoogleが提唱しているデザインの考え方です。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h2>グリッドレイアウトを理解します！</h2>
+                <div class="row">
+                    <div class="col m6 push-m6">
+                        <a class="waves-effect waves-light" onclick="toasts()"><img class="z-depth-2"
+                                src="https://lorempixel.com/600/400/nature/5"></a>
+                    </div>
+                    <div class="col m6 pull-m6">
+                        <p>
+                            基本的にはBootstrapと同じで、クラス名が短くなってるくらいです。<br>
+                            画面全体のレイアウトを12分割し、さまざまなレイアウトを展開できます。<br>
+                            また、スマホ・タブレット・PCとデバイスごとにも指定できます。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section class="section">
+                <h2>ライブラリ一覧</h2>
+                <table class="bordered">
+                    <thead>
+                        <tr>
+                            <th>ライブラリ名</th>
+                            <th>特徴</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>王道のCSSフレームワーク</td>
+                        </tr>
+                        <tr>
+                            <td>Materialize</td>
+                            <td>Material Designに基づいて作られたCSSフレームワーク</td>
+                        </tr>
+                        <tr>
+                            <td>bulma</td>
+                            <td>シンプルで軽量なフレームワーク</td>
+                        </tr>
+                        <tr>
+                            <td>Semantic UI</td>
+                            <td>3000以上のテーマ、50以上の多彩なUIコンポーネント</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6337.272985337065!2d-122.08409!3d37.422066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c296c66619367e0!2z44Kw44O844Kw44Or44OX44Os44OD44Kv44K5!5e0!3m2!1sja!2sjp!4v1606543323482!5m2!1sja!2sjp"
+                    width="100%" height="350" frameborder="0" style="border:0;margin-top:2em;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0">
+                </iframe>
+            </section>
+            <div class="divider"></div>
+            <section class="section" id="contact">
+                <h2>お問い合わせ</h2>
+                <div class="row">
+                    <form class="col s10 offset-s1">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="name" type="text" class="validate">
+                                <label for="name">お名前</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="tel" type="tel" class="validate">
+                                <label for="tel">連絡先</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mail</i>
+                                <input id="email" type="email" class="validate">
+                                <label for="email">メ－ルアドレス</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">date_range</i>
+                                <input id="date" type="text" class="datepicker">
+                                <label for="date">日付</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">access_time</i>
+                                <input id="time" type="text" class="timepicker">
+                                <label for="time">時間</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <div class="checkbox">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Red</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Yellow</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Filled in</span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">ご用件</label>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button class="btn waves-effect waves-light" type="button" name="action"
+                                onclick="OutputForm()">
+                                送信する<i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer indigo accent-2">
+        <div class="footer-content">
+            <a href="">プライバシーポリシー</a>
+            <a href="">特定商取引法</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2020 Copyright Text
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
